@@ -1,0 +1,21 @@
+flask library/package microframework
+virtual environment
+migrations
+templating(jinja)
+routing/views(use decorators)
+postgresql(database)
+models(object instance of a database table)
+relationships(one to many, many to many)
+Flask SQLAlchemy(ORM)
+RESTful APIs
+serializers
+
+steps
+1. virtual environment - python3 -m venv <virtual_env_name>(source <virtual_name>/bin/activate), pipenv install(pipenv shell)
+2. install flask - pip install flask
+3. create main file(app.py)
+4. Start development server - python3 <main_file>, flask run(FLASK_APP=<file_name.py>, FLASK_RUN_PORT=<port_number>, FLASK_DEBUG=1)
+5. Install Flask SQLAlchemy (pip install Flask-SQLAlchemy)
+6. Configure database connection on app.py file(app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://<username>:<password>@localhost/<database_name>')
+7. Run flask migrations(if using postgresql=> install psycopg2(pip install psycopg2-binary)), install flask migrate(pip install Flask-Migrate), flask db init, flask db migrate, flask db upgrade head
+8. Seed data(adding fake data into database)
